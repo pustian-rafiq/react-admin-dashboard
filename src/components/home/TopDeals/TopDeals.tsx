@@ -1,4 +1,4 @@
-import { topDealUsers } from "../../data/topDealsUsers";
+import { topDealUsers } from "../../../data/topDealsUsers";
 import "./top-deals.scss";
 
 const TopDeals = () => {
