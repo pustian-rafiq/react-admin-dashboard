@@ -1,6 +1,9 @@
-import ChartBox from "../../components/home/ChartBox/ChartBox.tsx";
 import TopDeals from "../../components/home/TopDeals/TopDeals.tsx";
+import BarChartBox from "../../components/home/chart/barChart/BarChart.tsx";
+import LineChartBox from "../../components/home/chart/lineChart/LIneChart.tsx";
+import PieChartBox from "../../components/home/chart/pieChart/PieChart.tsx";
 import {
+  barChartBoxVisit,
   chartBoxConversion,
   chartBoxProduct,
   chartBoxRevenue,
@@ -15,21 +18,27 @@ const Home = () => {
         <TopDeals />
       </div>
       <div className="box box2">
-        <ChartBox {...chartBoxUser} />
+        <LineChartBox {...chartBoxUser} />
       </div>
       <div className="box box3">
-        <ChartBox {...chartBoxProduct} />
+        <LineChartBox {...chartBoxProduct} />
       </div>
-      <div className="box box4">Box</div>
+      <div className="box box4">
+        <PieChartBox />
+      </div>
       <div className="box box5">
-        <ChartBox {...chartBoxConversion} />
+        <LineChartBox {...chartBoxConversion} />
       </div>
       <div className="box box6">
-        <ChartBox {...chartBoxRevenue} />
+        <LineChartBox {...chartBoxRevenue} />
       </div>
       <div className="box box7">Box</div>
-      <div className="box box8">Box</div>
-      <div className="box box9">Box</div>
+      <div className="box box8">
+        <BarChartBox {...barChartBoxVisit} />
+      </div>
+      <div className="box box9">
+        <BarChartBox {...barChartBoxVisit} />
+      </div>
     </div>
   );
 };
